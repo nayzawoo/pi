@@ -5,35 +5,57 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/app.css"/>
     <style>
-    #canvas {
-        width: 100%;
-        height: 100%;
-    }
-    #update {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 3px;
-        height: 25px;
-        color : #fff;
-    }
+        #circle, #chart {
+            width: 100%;
+            height: 300px;
+        }
+        .header-panel {
+            background-color: #009587;
+            height: 144px;
+            position: relative;
+            z-index: 3;
+        }
+        .header-panel h1 {
+            color: #FFF;
+            padding-left: 35px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header-panel shadow-z-2">
+      <div class="container">
         <div class="row">
-            <div class="jumbotron">
-                <h2>What is Pi</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <canvas id="canvas" resize></canvas>
-            </div>
+          <div class="col-xs-12">
+            <h1>Pi (π)</h1>
         </div>
     </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="page-header">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="well infobox">
+                    <div class="alert alert-dismissible alert-warning">
+                        <h4>Formula for PI</h4>
+                        <p>&pi; = &sum;<sub>k=0 to &infin;</sub> 16<sup>-k</sup>[ 4/(8k+1) - 2/(8k+4) - 1/(8k+5) - 1/(8k+6) ]</p>
+                    </div>
+<!--                     <div class="panel panel-default">
+                        <div class="panel-body">
+                          <canvas id="circle" resize></canvas>
+                      </div>
+                  </div> -->
+                  <div class="panel panel-default">
+                        <div class="panel-body">
+                          <canvas id="chart" resize></canvas>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <script src="js/vendor.js"></script>
 <script src="js/app.js"></script>
 </body>

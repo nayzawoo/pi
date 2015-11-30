@@ -1,5 +1,5 @@
 module.exports = {
-    mainRadius: 50,
-    ground: 150,
+    mainRadius: 80,
+    ground: 200,
     left_padding: 10
 };

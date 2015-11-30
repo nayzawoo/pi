@@ -87,7 +87,7 @@ gulp.task('build-persistent', [], function() {
   return bundle();
 });
 
-gulp.task('build', ['build-persistent'], function() {
+gulp.task('build', ['build-persistent', 'copy'], function() {
   process.exit(0);
 });
 
