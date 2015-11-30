@@ -55,7 +55,7 @@ let conf;
                 point: [w*2*(i-1)+padding+w, ground + 15],
                 fillColor: '#78909C',
                 justification : 'center',
-                content: i + 'm',
+                content: i - 1 + 'm',
             });
         }
     }
