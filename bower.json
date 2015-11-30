@@ -1,0 +1,30 @@
+{
+  "name": "pi",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Naythurain <naythurain.071@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/thoughtram/es6-babel-browserify-boilerplate",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/fonts/*",
+        "dist/css/bootstrap.css"
+      ]
+    }
+  }
+}
