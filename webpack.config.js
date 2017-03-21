@@ -7,7 +7,7 @@ const config = {
     app_chart: './src/app_chart.js',
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'js'),
     filename: '[name].js'
   },
   module: {
