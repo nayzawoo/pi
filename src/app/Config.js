@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import { get } from 'lodash';
 
 class Config {
     constructor(_configs ) {
@@ -7,7 +7,7 @@ class Config {
     }
 
     get(key) {
-        return _.get(this._configs, key);
+        return get(this._configs, key);
     }
 
     config(key) {

@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import {extend} from 'lodash';
 const radius = 80;
 const diameter = 2 * radius;
 const padding = 10;
@@ -74,12 +74,12 @@ const el = document.getElementById('circle');
         // store to hide
         this.tempCircles.push(circle);
         
-        new this.paper.Path.Line(_.extend(lineDefault, {
+        new this.paper.Path.Line(extend(lineDefault, {
             from: [xZero + diameter*(n), yTop],
             to: [xZero + diameter*(n),  g],
         }));
 
-        new this.paper.PointText(_.extend(textDefault, {
+        new this.paper.PointText(extend(textDefault, {
             point: [xZero + diameter*(n), yTop - 10],
             content: n,
         }));
@@ -97,13 +97,13 @@ const el = document.getElementById('circle');
             return;
         }
 
-        new this.paper.Path.Line(_.extend(lineDefault, {
+        new this.paper.Path.Line(extend(lineDefault, {
             from: [xZero + diameter*(n-1), yTop],
             to: [xZero + diameter*(n-1),  g],
             strokeColor: tempCirclesColor,
         }));
 
-        new this.paper.PointText(_.extend(textDefault, {
+        new this.paper.PointText(extend(textDefault, {
             point: [xZero + diameter*(n-1), yTop - 10],
             content: 0,
         }));

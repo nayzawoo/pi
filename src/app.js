@@ -1,7 +1,4 @@
-import Config from './app/Config';
-import CircleCanvas from './circle';
-import ChartCanvas from './chart';
-import Paper from 'paper';
+import CircleCanvas from './circle'
+import ChartCanvas from './chart'
 
-(new CircleCanvas(new Paper.PaperScope())).draw();
-// (new ChartCanvas(new Paper.PaperScope())).draw();
+(new CircleCanvas(new paper.PaperScope)).draw()
